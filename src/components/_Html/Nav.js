@@ -5,6 +5,7 @@ import axios from 'axios'
 class Nav extends Component {
   constructor(props) {
     super(props)
+    this.auth = true
   }
   render() {
    

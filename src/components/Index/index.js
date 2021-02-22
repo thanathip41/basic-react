@@ -13,6 +13,7 @@ class Index extends Component {
         }
         this.store = props.store
         this.DOM = document.querySelector.bind(document)
+        console.log(props.user)
     }
 
     async componentDidMount() {
@@ -25,6 +26,7 @@ class Index extends Component {
                 type: 'LOAD',
                 data
             })
+
         } 
         this.setState({ users : this.store.data }) 
     }

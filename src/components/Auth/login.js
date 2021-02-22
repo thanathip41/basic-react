@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
 
-function Example() {
-  const [count, setCountx] = useState(0);
-
-  useEffect(() => {
-    console.log(document.title)
-  });
-
-  return (
-    <div>
-      login
-    </div>
-  );
+class NotFound extends Component {
+  constructor (props) {
+    super(props) 
+    console.log(props ,'props')
+    console.log("property_id",props.location.state)
+  }
+  componentDidMount(props){
+    console.log();
+  }
+  render() {
+      return (
+          <div> Login </div>
+      );
+  }
 }
-export default Example
+
+export default NotFound
